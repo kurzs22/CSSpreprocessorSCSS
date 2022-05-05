@@ -1,0 +1,40 @@
+@mixin ring($color, $size) {
+    $shadow: $size * 0.008;
+    color: $color;
+    font-size: $size;
+    font-weight: 700;
+    text-shadow: $shadow $shadow 4px lightgray;
+    content: "\0025EF";
+    vertical-align: middle;
+}
+
+body {
+    text-align: center;
+    font-family: Papyrus, fantasy;
+}
+
+.tworings {
+    h1 {
+        &::before, &::after {
+            @include ring(orange, 1.5em);
+        }
+    }
+}
+
+.bigring h1::before {
+    @include ring(gold, 4em);
+}
+
+.manyrings {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    @for $i from 1 through 6 {
+        div.ring:nth-child(6n + #{$i})::after {
+            $size: 1em + 1em * $i;
+            @include ring(black, $size);
+            margin-left: -0.5em;
+        }
+    }
+}

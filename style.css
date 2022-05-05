@@ -1,0 +1,99 @@
+body {
+  text-align: center;
+  font-family: Papyrus, fantasy;
+}
+
+.tworings h1::before, .tworings h1::after {
+  color: orange;
+  font-size: 1.5em;
+  font-weight: 700;
+  text-shadow: 0.012em 0.012em 4px lightgray;
+  content: "\0025EF";
+  vertical-align: middle;
+}
+
+.bigring h1::before {
+  color: gold;
+  font-size: 4em;
+  font-weight: 700;
+  text-shadow: 0.032em 0.032em 4px lightgray;
+  content: "\0025EF";
+  vertical-align: middle;
+}
+
+.manyrings {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.manyrings div.ring:nth-child(6n + 1)::after {
+  color: black;
+  font-size: 2em;
+  font-weight: 700;
+  text-shadow: 0.016em 0.016em 4px lightgray;
+  content: "\0025EF";
+  vertical-align: middle;
+  margin-left: -0.5em;
+}
+
+.manyrings div.ring:nth-child(6n + 2)::after {
+  color: black;
+  font-size: 3em;
+  font-weight: 700;
+  text-shadow: 0.024em 0.024em 4px lightgray;
+  content: "\0025EF";
+  vertical-align: middle;
+  margin-left: -0.5em;
+}
+
+.manyrings div.ring:nth-child(6n + 3)::after {
+  color: black;
+  font-size: 4em;
+  font-weight: 700;
+  text-shadow: 0.032em 0.032em 4px lightgray;
+  content: "\0025EF";
+  vertical-align: middle;
+  margin-left: -0.5em;
+}
+
+.manyrings div.ring:nth-child(6n + 4)::after {
+  color: black;
+  font-size: 5em;
+  font-weight: 700;
+  text-shadow: 0.04em 0.04em 4px lightgray;
+  content: "\0025EF";
+  vertical-align: middle;
+  margin-left: -0.5em;
+}
+
+.manyrings div.ring:nth-child(6n + 5)::after {
+  color: black;
+  font-size: 6em;
+  font-weight: 700;
+  text-shadow: 0.048em 0.048em 4px lightgray;
+  content: "\0025EF";
+  vertical-align: middle;
+  margin-left: -0.5em;
+}
+
+.manyrings div.ring:nth-child(6n + 6)::after {
+  color: black;
+  font-size: 7em;
+  font-weight: 700;
+  text-shadow: 0.056em 0.056em 4px lightgray;
+  content: "\0025EF";
+  vertical-align: middle;
+  margin-left: -0.5em;
+}
+/*# sourceMappingURL=style.css.map */
